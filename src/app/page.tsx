@@ -6,7 +6,6 @@ import { getAllPosts } from "@/lib/api";
 
 export default function Index() {
   const allPosts = getAllPosts();
-
   const heroPost = allPosts[0];
   const morePosts = allPosts.slice(1);
 
@@ -14,7 +13,7 @@ export default function Index() {
     <main>
       <Container>
         <Intro />
-        {heroPost && (
+        {heroPost ? (
           <HeroPost
             title={heroPost.title}
             coverImage={heroPost.coverImage}
@@ -23,6 +22,8 @@ export default function Index() {
             slug={heroPost.slug}
             excerpt={heroPost.excerpt}
           />
+        ) : (
+          <div>No posts available</div>
         )}
         {morePosts.length > 0 && <MoreStories posts={morePosts} />}
       </Container>
