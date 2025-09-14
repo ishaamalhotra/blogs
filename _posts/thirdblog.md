@@ -7,9 +7,9 @@ author:
   name: "Kamal Gupta"
   picture: "/assets/blog/authors/kamal.jpeg"
 ogImage:
-  url: "/assets/blog/firstblog/cover.jpg"
+  url: "/assets/blog/firstblog/cover.jpg" 
 ---
-![My Diagram](images/diagram.png "This is a diagram")
+![My Diagram](/assets/thirdblog/3b_1.png "This is a diagram")
 
 Bring Your Deployments (BYD)
 
